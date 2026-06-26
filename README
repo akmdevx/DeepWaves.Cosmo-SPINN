@@ -1,3 +1,3 @@
 We present a physics-informed U-net based generative framework, which we call Cosmo-SPINN, for wave dark matter simulations governed by Schrodinger-Poisson Equations.  
 We address two complementary tasks: (i) evolution of cosmological fields from initial conditions to an arbitrary scale factor and (ii) super-resolution of FDM simulations at the specified scale factor.
-![Framework](https://github.com/mishraashu6566/DeepWaves.Cosmo-SPINN/edit/main/frame.png)
+![Framework](https://github.com/mishraashu6566/DeepWaves.Cosmo-SPINN/edit/main/image.png)
