@@ -1,1 +1,3 @@
 This folder contains the scripts for all the models used.
+
+Release: Contains all the trained models' weights used to generate the plots in the paper.
