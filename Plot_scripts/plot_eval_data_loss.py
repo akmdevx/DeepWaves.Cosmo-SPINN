@@ -14,8 +14,8 @@ def moving_average(x, alpha=0.1):
 # --------------------------------------------------
 # Read logs
 # --------------------------------------------------
-train1, test1 = np.load('train_losses_DO.npy'),np.load('test_losses_DO.npy')
-train2, test2 = np.load('train_losses_PI.npy'),np.load('test_losses_PI.npy')
+train1, test1 = np.load('./Loss_data/train_losses_DO.npy'),np.load('./Loss_data/test_losses_DO.npy')
+train2, test2 = np.load('./Loss_data/train_losses_PI.npy'),np.load('./Loss_data/test_losses_PI.npy')
 print(len(train1), len(train2))
 
 # --------------------------------------------------
