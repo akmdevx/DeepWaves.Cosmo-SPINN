@@ -36,7 +36,7 @@ If you use this code or the associated models, please cite:
 ```
 
 ## Repository Structure
-
+The linked zenodo for this repository: DOI 10.5281/zenodo.22816378
 ```text
 DeepWaves.Cosmo-SPINN/
 ├── Models/          # Model architectures
