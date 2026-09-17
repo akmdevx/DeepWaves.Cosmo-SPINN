@@ -566,13 +566,13 @@ if __name__ == "__main__":
     G.load_state_dict(torch.load('https://github.com/akmdevx/DeepWaves.Cosmo-SPINN/releases/PI_Evol_Mod.pt')) 
 
 
-    #sample_fields_re(2010,G,fdm_data,labels, ic_data, stats)
-    #sample_fields_re(2010,G,fdm_test,labels_test, ic_test, stats)
+    # Use sample_fields_re function to get the Fig 4 of the paper
+    sample_fields_re(2010,G,fdm_test,labels_test, ic_test, stats)
 
     fdm_data = torch.cat([fdm_train, fdm_test], dim=0)
     labels = torch.cat([labels_train, labels_test], dim=0)
     ic_data = torch.cat([ic_train, ic_test], dim=0)
-
+    #Use evaluate_power_spectrum_evolution to get the Fig 5 of the paper
     evaluate_power_spectrum_evolution(2010,G,fdm_data,labels, ic_data, stats)
     
  
