@@ -524,7 +524,7 @@ if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {device}")
 
-    save_dir1 = "link to the path for EVOL_DATA_SR from Zenodo"
+    save_dir1 = "link to the path for EVOL_DATA_SR and EVOL_DATA_TRAIN_SR from Zenodo"
     fdm_train_np = np.load(os.path.join(save_dir1, "fdm_train.npy"))
     labels_train_np = np.load(os.path.join(save_dir1, "labels_train.npy"))
     ic_train_np = np.load(os.path.join(save_dir1, "ic_train.npy"))
