@@ -105,6 +105,27 @@ if __name__ == "__main__":
     # Load data
 
 
+    save_dir1 = "link to the path for EVOL_DATA_SR and EVOL_DATA_TRAIN_SR from Zenodo"
+    fdm_train_np = np.load(os.path.join(save_dir1, "fdm_train.npy"))
+    labels_train_np = np.load(os.path.join(save_dir1, "labels_train.npy"))
+    ic_train_np = np.load(os.path.join(save_dir1, "ic_train.npy"))
+
+    fdm_test_np = np.load(os.path.join(save_dir1, "fdm_test.npy"))
+    labels_test_np = np.load(os.path.join(save_dir1, "labels_test.npy"))
+    ic_test_np = np.load(os.path.join(save_dir1, "ic_test.npy"))
+
+    stats = np.load(os.path.join(save_dir1, "stats.npy"),allow_pickle = True).item()
+    # ---- convert to torch ----
+    fdm_train = torch.tensor(fdm_train_np, dtype=torch.float32)
+    labels_train = torch.tensor(labels_train_np, dtype=torch.float32)
+    ic_train = torch.tensor(ic_train_np, dtype=torch.float32)
+    #ic_train_real = torch.tensor(ic_train_np_real, dtype = torch.float32)
+    max_val = np.load(os.path.join(save_dir1,"max_val.npy"))
+    min_val = np.load(os.path.join(save_dir1,"min_val.npy"))
+
+    fdm_test = torch.tensor(fdm_test_np, dtype=torch.float32)
+    labels_test = torch.tensor(labels_test_np, dtype=torch.float32)
+    ic_test = torch.tensor(ic_test_np, dtype=torch.float32)
     
     print(f"Training set size: {train_size}")
     print(f"Test set size: {test_size}")
