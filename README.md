@@ -12,7 +12,7 @@ The framework addresses two complementary tasks:
 
 1. **Field evolution:** Predicting cosmological FDM fields from initial conditions to an arbitrary scale factor.
 2. **Super-resolution:** Generating high-resolution FDM fields from low-resolution simulations at a specified scale factor.
-<img width="3736" height="2169" alt="Image" src="https://github.com/user-attachments/assets/34afa07e-aa38-4850-bd46-3758f739458a" />
+
 ## Paper
 
 **Cosmo-SPINN: Physics-Informed Generative Modeling of Fuzzy Dark Matter Simulations**
